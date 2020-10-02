@@ -17,7 +17,7 @@ public class Main {
         return false;
     }
 
-    public static void Display(int[] arr){//method for printing out an array
+    public static void display(int[] arr){//method for printing out an array
         System.out.print("Elements are: ");
         for (int j : arr) {
             System.out.print(j + " ");
@@ -32,7 +32,7 @@ public class Main {
         for(int i=0;i<size;i++){
             array[i]=(int)(Math.random()*10);//assigning a random value between [0,..10]
         }
-        Display(array);//displaying array
+        display(array);//displaying array
         //Testing avg() function
         System.out.println("Среднее значение массива равно: "+avg(array));//printing the average of an array
 
