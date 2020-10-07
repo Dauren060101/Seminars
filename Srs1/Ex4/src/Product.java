@@ -1,0 +1,15 @@
+/**
+ * Создать класс Товар, имеющий переменные имя, цена, рейтинг.
+ */
+public class Product {
+    String name;
+    double price;
+    double rating;
+
+    public Product(String name, double price, double rating) {//конструктор класса
+        this.name = name;
+        this.price = price;
+        this.rating = rating;
+    }
+}
+
