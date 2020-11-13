@@ -32,7 +32,8 @@ public class BookController implements WebMvcConfigurer {
 
     @GetMapping("/")
     public String showForm(Book book) {
-
+        //toCreate a table
+        repository.createTable();
         return "form";
 
     }
