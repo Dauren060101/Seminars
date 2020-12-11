@@ -1,4 +1,6 @@
-public class Animal {
+import java.io.Serializable;
+
+public class Animal implements Serializable{
     String food;
     String location;
     public Animal(){}
@@ -51,7 +53,7 @@ class Cat extends Animal{
     }
 }
 
-class Horse extends Animal{
+class Horse  extends Animal implements Serializable{
     String unique = "быстрый и выносливый товарищ";
     public Horse(String food, String location) {
         super(food,location);
@@ -64,5 +66,10 @@ class Horse extends Animal{
     @Override
     public void eat() {
         System.out.println("Лошадь ест "+this.food);
+    }
+
+    @Override
+    public String toString() {
+        return "{\tМесто жительства:"+this.location+"\n\tПитание:"+this.food+"\n\tОписание"+this.unique+"\n}";
     }
 }
